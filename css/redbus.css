@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#headerBlock { 
+    width: 100%; 
+    z-index: 1;
+    position: fixed;
+    background-color: #d84f57;
+}
+
+#headerBlock .container {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    height: 60px;
+    align-items: center;
+}
+
+#headerBlock .container .leftNav {
+    flex: 1;
+}
+
+
+#headerBlock .container .rightNav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* window parent position */
+#sliderBlock img {
+    width: 100%;
+    height: 450px;
+}
+
+/*-----Left Menu Block------*/
+.leftNav section {
+    display: flex;
+}
+
+.leftNav ul ,
+.rightNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.leftNav ul li a ,
+.rightNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.logo {
+    flex: 1;
+}
+
+.leftmenu {
+    flex: 8;
+}
+
+.logo a {
+    background-image: url(../images/logo.png);
+    width: 80px;
+    height: 48px;
+    display: flex;
+    text-indent: -9999px;
+}
+
+.leftNav ul li a.active {
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    transition: ease-in-out 0.6s;
+}
+
+.leftNav ul li a:hover {
+    color: #f9e7ea;
+}
+
+.fa-user-circle {
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+.fa-chevron-down {
+    margin: 0px 0px 0px 6px;
+}
+
+.after_user_circle {
+    margin: -24px 0px 0px 40px !important;
+    display: block;
+}
+
+#sliderBlock {
+    background-image: url('../images/safetyplus1.png');
+    background-repeat: round;
+    width: 100%;
+    background-size: auto;
+}
+
+#searchBusesBlock article {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 450px;
+    position: relative;
+    top: 20px;
+}
+
+/* dropdown css starts here */
+
+.rightNav ul ul {
+    width: 120px;
+    display: block;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 3px;
+    margin-top: 5px;
+    margin-left: 13px;
+    display: none;
+}
+
+.rightNav ul ul li a {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.rightNav ul li:hover >ul {
+    display: block;
+}
+
+/* dropdown css ends here */
+
+
+/*----- Attribute Selector ----*/
+
+input[type="date"] {
+    font-size: 11px;
+    padding: 14px 30px !important;
+    border-right: none !important;
+}
+
+#searchBusesBlock article input {
+    padding: 15px 30px 16px 40px;
+    border: none;
+    border-right: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+#sliderBlock article button {
+    height: 46px;
+    width: 146px;
+    background: #d74f57;
+    box-sizing: border-box;
+    border: none;
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.city_icon {
+    position: relative;
+}
+
+.city_icon i {
+    position: absolute;
+    top: -12px;
+    left: 6px;
+    font-size: 20px;
+}
+
+/* latestUpdateBlock css starts here */
+
+#latestUpdateBlock {
+    display: flex;
+    justify-content: center;
+}
+
+#latestUpdateBlock article {
+    width: 530px;
+    height: 100px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    background: #fff5e5;
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+}
+
+#latestUpdateBlock article div:nth-child(1) {
+    flex : 2;
+}
+
+#latestUpdateBlock article div:nth-child(2) {
+    flex : 8;
+}  
+
+#latestUpdateBlock article div:nth-child(3) {
+    flex : 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 80px;
+}
+
+#bell-on i {
+    font-size: 50px;
+    color: #d74f57;
+    padding: 0px 10px;
+}
+
+#latestUpdateBlock article h4 {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+}
+
+#latestUpdateBlock article p {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+#latestUpdateBlock article button {
+    width: 130px;
+    height: 25px;
+    background: #d74f57;
+    color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* on time block css starts here */
+
+#OnTimeBlock > article {
+    width: 1120px;
+    height: 320px;
+    border: 1px solid #ccc;
+    background: white;
+    margin: 80px auto 50px auto;
+    display: flex;
+}
+
+.leftOnDiv {
+    flex: 1;
+}
+
+.leftOnDiv p {
+    background: url(../images/ic-shield-red-big.png);
+    height: 88px;
+    width: 88px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin: 20px;
+}
+
+.rightOnDiv {
+    flex: 8;
+}
+
+.tip,
+.ontime {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.tip {
+    background-image: url(../images/tip-icon.png);
+    width: 24px;
+    height: 24px;
+}
+
+.ontime {
+    background-image: url(../images/otgText.png);
+    width: 156px;
+    height: 24px;
+}
+
+.rightInsideFooter {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.rightInsideFooter div {
+    flex: 1;
+}
+
+.rightInsideHeader h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3e3e52;
+    margin-bottom: 0px;
+}
+
+.rightInsideHeader h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7e7e8c;
+    margin-top: 10px;
+    letter-spacing: 0.3px;
+}
+
+.rightInsideMain p {
+    margin: 35px 0px;
+    font-size: 14px;
+    color: #4a4a4a;
+    letter-spacing: 0.3px;
+}
+
+.rightInsideFooter h2 {
+    font-size: 19px;
+    font-weight: bolder;
+    color: #1446a0;
+    margin: 0px 0px 10px 0px;
+}
+
+.rightInsideFooter h5 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #34495e;
+    margin: 0px;
+}
+
+.rightInsideFooter p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #34495e;
+    width: 90%;
+    margin: 5px 0px 0px 0px ;
+}
+
+/* on time block css ends here */
+
+/*track my bus css starts here*/
+
+#TrackMyBusBlock article {
+    width: 1120px;
+    height: 525px;
+    background-color: #e8ecef;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+.topTrack {
+    display: flex;
+}
+
+.leftTrack {
+    flex: 1;
+}
+
+.rightTrack {
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.leftTrack p {
+    background-image: url(../images/tmb_img.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 282px;
+    margin-left: 71px;
+    margin-top: 26px;
+    text-indent: -9999px;
+}
+
+.rightTrack h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #4a4a4a;
+    padding: 0px 0px 4px 0px;
+}
+
+.rightTrack p {
+    font-size: 14px;
+    color: #4a4a4a;
+    width: 85%;
+    line-height: 1.5;
+}
+
+.rightTrack button {
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 8px 17px;
+    color: #4c8fdb;
+    border: 1px solid #4c8fdb;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.bottomTrack {
+    display: flex;
+    padding: 0px 50px;
+}
+
+.bottomTrack div {
+    flex: 1;
+    text-align: center;
+    padding: 30px 70px;
+}
+
+.bottomTrack p {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.bottomTrack h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #da4d52;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+.divider {
+    width: 940px;
+    height: 2px;
+    border-bottom: 2px solid #ddd;
+    padding-top: 15px;
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+/*track my bus css ends here*/
+
+/*--- Our Global BLock css starts here ---*/
+
+#globalBlock {
+    padding: 40px 0px 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 100px;
+}
+
+.globalBlockContent {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.globalBlockContent h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.globalBlockContent article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 100px 30px;
+    
+}
+
+.globalBlockContent article > div{
+    flex-basis: 32%;
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.colombia p:first-child {
+    background: url(../images/sprites.png) !important;
+    height: 80px;
+    width: 122px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -614px !important;
+    text-indent: -9999px;
+}
+
+.india p:first-child {
+    background: url(../images/sprites.png) !important;
+    height: 80px;
+    width: 122px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -294px !important;
+    text-indent: -9999px;
+}
+
+.indonesia p:first-child {
+    background: url(../images/sprites.png) !important;
+    height: 80px;
+    width: 122px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -214px !important;
+    text-indent: -9999px;
+}
+
+.malaysia p:first-child {
+    background: url(../images/sprites.png) !important;
+    height: 80px;
+    width: 162px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -374px !important;
+    text-indent: -9999px;
+}
+
+.peru p:first-child {
+    background: url(../images/sprites.png) !important;
+    height: 80px;
+    width: 122px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -454px !important;
+    text-indent: -9999px;
+}
+
+.singapore p:first-child {
+    background: url(../images/sprites.png) !important;
+    height: 80px;
+    width: 122px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -534px !important;
+    text-indent: -9999px;
+}
+
+.country {
+    text-align: center;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+/*--- Our Global BLock css ends ---*/
+
+/* We Promise To Deliver  css starts here */
+#promiseBlock {
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+}
+
+#promiseBlock article {
+    width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: #f1f1f1;
+}
+
+#promiseBlock article > header {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#promiseBlock article > header p {
+    margin: 0;
+    padding: 0;
+}
+
+#promiseBlock article > header p img {
+    height: 100px;
+}
+
+#promiseBlock article > header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin: 10px 0 0 0;
+}
+
+.mainPromiseContainer {
+    background: white;
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid #aaa;
+}
+
+.mainPromiseContainer div {
+    flex: 1;
+    border: 0.3px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.mainPromiseContainer div img {
+    height: 90px;
+}
+
+.mainPromiseContainer div h5 {
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-weight: lighter;
+    padding: 30px 30px 0px;
+    text-align: center;
+    height: 20px;
+}
+
+.mainPromiseContainer div footer p {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-align: center;
+    line-height: 23px;
+    padding: 0px 7px;
+}
+/* We Promise To Deliver css starts here */
