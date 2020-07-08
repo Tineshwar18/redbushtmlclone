@@ -39,7 +39,7 @@ body {
     height: 450px;
 }
 
-/*-----Left Menu Block------*/
+/* -----Left Menu Block------ */
 .leftNav section {
     display: flex;
 }
@@ -147,7 +147,7 @@ body {
 /* dropdown css ends here */
 
 
-/*----- Attribute Selector ----*/
+/* ----- Attribute Selector ---- */
 
 input[type="date"] {
     font-size: 11px;
@@ -357,7 +357,7 @@ input[type="date"] {
 
 /* on time block css ends here */
 
-/*track my bus css starts here*/
+/* track my bus css starts here */
 
 #TrackMyBusBlock article {
     width: 1120px;
@@ -451,9 +451,9 @@ input[type="date"] {
     margin-right: 92px;
 }
 
-/*track my bus css ends here*/
+/* track my bus css ends here */
 
-/*--- Our Global BLock css starts here ---*/
+/* --- Our Global BLock css starts here --- */
 
 #globalBlock {
     padding: 40px 0px 10px;
@@ -555,20 +555,18 @@ input[type="date"] {
     font-weight: 400;
     letter-spacing: 2px;
 }
-/*--- Our Global BLock css ends ---*/
+/* --- Our Global BLock css ends --- */
 
 /* We Promise To Deliver  css starts here */
 #promiseBlock {
-    background-color: #f1f1f1;
-    padding: 0;
-    margin: 0;
+    background: #f1f1f1;
+    padding: 50px;
+    margin: 50px 0;
 }
 
 #promiseBlock article {
     width: 1260px;
     margin: 0 auto;
-    margin-bottom: 100px;
-    background-color: #f1f1f1;
 }
 
 #promiseBlock article > header {
@@ -605,7 +603,7 @@ input[type="date"] {
 
 .mainPromiseContainer div {
     flex: 1;
-    border: 0.3px solid #aaa;
+    border: 1px solid #aaa;
     display: flex;
     flex-direction: column;
     align-items: center;
